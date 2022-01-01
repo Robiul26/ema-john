@@ -23,7 +23,7 @@ function App() {
       <Header/>
     <Routes>
       <Route>
-        <Route path="/" exact element={<Shop />} />
+        <Route path="/" element={<Shop />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/review" element={<Review />} />
         <Route path="/inventory" element={<Inventory />} />
