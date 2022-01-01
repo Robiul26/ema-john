@@ -38,9 +38,9 @@ const Review = () => {
 
     return (
        <div className="container">
-            <div className='row'>
+            <div className='row mt-5'>
                 <div className="col-md-9">
-                    <div className="row mt-5">
+                    <div className="row">
                         {orderPlace && <img src={happyImg} alt="" />}
                         {/* <h2>Cart Items: {cart.length}</h2> */}
                         {cart.map(pd => <ReviewItems handleRemoveProduct={handleRemoveProduct} key={pd.key} product={pd}/> )}

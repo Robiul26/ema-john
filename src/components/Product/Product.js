@@ -14,7 +14,7 @@ const Product = (props) => {
                         <div className="card-body">
                             {props.showAddToCard?
                               <h5 className="card-title">
-                              <Link to={'/product/'+ product.key}>{product.name}</Link>
+                              <Link to={'/ema-john-simple/product/'+ product.key}>{product.name}</Link>
                               </h5> 
                              : 
                              <h5 className="card-title">

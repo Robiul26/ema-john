@@ -2,7 +2,9 @@ import React from 'react';
 
 const ReviewItems = (props) => {
     const product = props.product;
+   
     return (
+       
        <div className="col-md-12">
            <div className="card mb-3">
                 <div className="row g-0">
