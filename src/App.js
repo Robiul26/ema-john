@@ -23,11 +23,11 @@ function App() {
       <Header/>
     <Routes>
       <Route>
-        <Route path="/" exact element={<Shop />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/review" element={<Review />} />
-        <Route path="/inventory" element={<Inventory />} />
-        <Route path="/product/:productKey" element={<ProductDetails/>} />
+        <Route path="/ema-john-simple/" exact element={<Shop />} />
+        <Route path="/ema-john-simple/shop" element={<Shop />} />
+        <Route path="/ema-john-simple/review" element={<Review />} />
+        <Route path="/ema-john-simple/inventory" element={<Inventory />} />
+        <Route path="/ema-john-simple/product/:productKey" element={<ProductDetails/>} />
         <Route path="*" element={<NotFound/>} />
       </Route>
     </Routes>
