@@ -50,7 +50,7 @@ const Review = () => {
                     <Cart cart={cart}>
                         {/* <Link>Place Order</Link> */}
                     {cart.length > 0 &&    <button onClick={handlePlaceOrder} className='btn btn-primary'>Place Order</button>}
-                    {cart.length === 0 &&    <Link to='/ema-john-simple/shop' className='btn btn-primary'>Go to shop</Link>}
+                    {cart.length === 0 &&    <Link to='/shop' className='btn btn-primary'>Go to shop</Link>}
                     </Cart>
                 </div>
             </div>

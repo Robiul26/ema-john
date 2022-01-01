@@ -50,7 +50,7 @@ const Shop = () => {
             </div>
             <div className="col-md-3">
                 <Cart cart={cart} >
-                    <Link to="/ema-john-simple/review"> <button className='btn btn-primary'>Review Order </button></Link> 
+                    <Link to="/review"> <button className='btn btn-primary'>Review Order </button></Link> 
                    
                 </Cart>
             </div>
