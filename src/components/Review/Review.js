@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import fakeData from '../../fakeData';
 import { getDatabaseCart, processOrder, removeFromDatabaseCart } from '../../utilities/databaseManager';
 import Cart from '../Cart/Cart';
@@ -11,11 +11,9 @@ import ReviewItems from '../ReviewItems/ReviewItems';
 const Review = () => {
     const [cart, setCart] = useState([]);
     const [orderPlace, setOrderPlace] = useState(false);
-    const handlePlaceOrder = () =>{
-        setCart([]);
-        processOrder();
-        setOrderPlace(true);
-        console.log('place ordered');
+    const navigat = useNavigate();
+    const handleProceedCheckout = () =>{
+        navigat('/shipment');
     }
     const handleRemoveProduct = (productKey) =>{
         const newCart = cart.filter(pd => pd.key !== productKey)
@@ -49,7 +47,7 @@ const Review = () => {
                 <div className="col-md-3">
                     <Cart cart={cart}>
                         {/* <Link>Place Order</Link> */}
-                    {cart.length > 0 &&    <button onClick={handlePlaceOrder} className='btn btn-primary'>Place Order</button>}
+                    {cart.length > 0 &&    <button onClick={handleProceedCheckout} className='btn btn-primary'>Proceed Chekout</button>}
                     {cart.length === 0 &&    <Link to='/shop' className='btn btn-primary'>Go to shop</Link>}
                     </Cart>
                 </div>
